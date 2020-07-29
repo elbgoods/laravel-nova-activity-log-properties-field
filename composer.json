@@ -32,7 +32,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Elbgoods\\LaravelNovaActivityLogPropertyField\\FieldServiceProvider"
+                "Elbgoods\\LaravelNovaActivityLogPropertiesField\\FieldServiceProvider"
             ]
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace Elbgoods\LaravelNovaActivityLogPropertyField;
+namespace Elbgoods\LaravelNovaActivityLogPropertiesField;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;

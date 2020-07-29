@@ -1,6 +1,6 @@
 <?php
 
-namespace Elbgoods\LaravelNovaActivityLogPropertyField;
+namespace Elbgoods\LaravelNovaActivityLogPropertiesField;
 
 use Laravel\Nova\Fields\Field;
 
