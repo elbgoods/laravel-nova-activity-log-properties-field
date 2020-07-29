@@ -3,7 +3,9 @@
     "description": "Prettified Field for the properties Attribute of the activity log table.",
     "keywords": [
         "elbgoods",
-        "laravel-nova-activity-log-properties-field"
+        "laravel-nova-activity-log-properties-field",
+        "laravel",
+        "nova"
     ],
     "homepage": "https://github.com/elbgoods/laravel-nova-activity-log-properties-field",
     "license": "MIT",
@@ -16,8 +18,7 @@
         }
     ],
     "require": {
-        "php": "^7.1",
-        "illuminate/support": "^6.0"
+        "php": ">=7.1.0"
     },
     "require-dev": {
         "orchestra/testbench": "^4.0",
@@ -28,27 +29,16 @@
             "Elbgoods\\LaravelNovaActivityLogPropertiesField\\": "src"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Elbgoods\\LaravelNovaActivityLogPropertiesField\\Tests\\": "tests"
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Elbgoods\\LaravelNovaActivityLogPropertyField\\FieldServiceProvider"
+            ]
         }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
     },
     "config": {
         "sort-packages": true
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Elbgoods\\LaravelNovaActivityLogPropertiesField\\LaravelNovaActivityLogPropertiesFieldServiceProvider"
-            ],
-            "aliases": {
-                "LaravelNovaActivityLogPropertiesField": "Elbgoods\\LaravelNovaActivityLogPropertiesField\\LaravelNovaActivityLogPropertiesFieldFacade"
-            }
-        }
-    }
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
