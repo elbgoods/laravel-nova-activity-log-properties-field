@@ -1,9 +1,18 @@
 <template>
-    <ul>
-        <li v-for="value in field">
-            {{value}}
-        </li>
-    </ul>
+    <div>
+        Old
+        <ul>
+            <li v-for="value in field.value.old">
+                {{value}}
+            </li>
+        </ul>
+        New
+        <ul>
+            <li v-for="value in field.value.attributes">
+                {{value}}
+            </li>
+        </ul>
+    </div>
 </template>
 
 <script>
