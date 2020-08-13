@@ -2,14 +2,14 @@
     <div>
         Old
         <ul>
-            <li v-for="value in field.value.old">
-                {{value}}
+            <li v-for="(value, key) in field.value.old">
+                {{key}}: {{value}}
             </li>
         </ul>
         New
         <ul>
-            <li v-for="value in field.value.attributes">
-                {{value}}
+            <li v-for="(value, key) in field.value.attributes">
+                {{key}}: {{value}}
             </li>
         </ul>
     </div>
