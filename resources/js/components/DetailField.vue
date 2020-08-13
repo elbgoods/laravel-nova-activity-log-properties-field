@@ -1,5 +1,9 @@
 <template>
-    <panel-item :field="field" />
+    <ul>
+        <li v-for="value in field">
+            {{value}}
+        </li>
+    </ul>
 </template>
 
 <script>
